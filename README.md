@@ -17,6 +17,8 @@ https://github.com/h4nd1n/RestAPI_example_DDD_UOW
 - Покрытие тестами 90% кода
 - Чёткая и расширяемая архитектура
 
+> Сильный пример промышленного DDD-подхода и грамотного управления транзакциями.
+
 ---
 
 ## Backend — FastAPI + Redis + Docker + uv
@@ -38,3 +40,19 @@ https://github.com/h4nd1n/FastAPI-Phonebook-Redis
 - Использование pre-commit hooks и lock-файла для стабильного окружения
 
 > Отличный пример небольшого, но качественного микросервиса с высокой степенью инженерной культуры.
+
+## Backend — FastAPI + DDD + SQLAlchemy + Docker
+
+### Lead Routing Mini-CRM
+
+https://github.com/h4nd1n/FastAPI-CRM
+
+Мини-CRM-сервис для распределения обращений между операторами:
+- Чёткая DDD-архитектура: domain / services / infrastructure / api
+- Детерминированный алгоритм распределения по весам и нагрузке
+- Полностью изолированная бизнес-логика, корректная обработка ошибок
+- Репозитории на SQLAlchemy, простая смена БД (SQLite → Postgres)
+- Полный набор тестов (unit + integration + functional)
+- Быстрый запуск в Docker Compose и локально через `uv`
+
+> Практический пример сервисного слоя и алгоритмического распределения лидов в Mini-CRM.
